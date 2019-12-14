@@ -1,0 +1,9 @@
+{
+	"axiom": "-L",
+	"productions": {
+        "L": "LFLF+RFR+FLFL-FRF-LFL-FR+F+RF-LFL-FRFRFR+",
+        "R": "-LFLFLF+RFR+FL-F-LF+RFR+FLF+RFRF-LFL-FRFR"
+	},
+	"iterations": 2,
+	"angle": 90
+}

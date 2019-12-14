@@ -1,0 +1,9 @@
+{
+	"axiom": "FX",
+	"productions": {
+		"X": "X+YF+",
+		"Y": "-FX-Y"
+	},
+	"iterations": 12,
+	"angle": 90
+}

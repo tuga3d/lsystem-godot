@@ -1,0 +1,8 @@
+{
+	"axiom": "F-F-F-F",
+	"productions": {
+		"F": "FF-F+F-F-FF"
+	},
+	"iterations": 3,
+	"angle": 90
+}

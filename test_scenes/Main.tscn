@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://lsystem/lsystem.gd" type="Script" id=1]
+[ext_resource path="res://test_scenes/scripts/Node2D.gd" type="Script" id=2]
+[ext_resource path="res://test_scenes/scripts/ImmediateGeometry.gd" type="Script" id=3]
+
+[node name="Main" type="Node"]
+
+[node name="LSystem" type="Node" parent="."]
+script = ExtResource( 1 )
+_jsonfile = "res://lsystem/examples/Islands and Lakes.json"
+axiom = "F+F+F+F"
+productions = {
+"F": "F+f-FF+F+FF+Ff+FF-f+FF-F-FF-Ff-FFF",
+"f": "ffffff"
+}
+iterations = 2
+length = 2.0
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="ImmediateGeometry" type="ImmediateGeometry" parent="."]
+script = ExtResource( 3 )
+[connection signal="value_changed" from="LSystem" to="ImmediateGeometry" method="_on_LSystem_value_changed"]
+[connection signal="value_changed" from="LSystem" to="Node2D" method="_on_LSystem_value_changed"]

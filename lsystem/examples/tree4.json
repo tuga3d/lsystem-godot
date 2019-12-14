@@ -1,0 +1,9 @@
+{
+	"axiom": "X",
+	"productions": {
+        "X": "F[+X]F[-X]+X",
+        "F": "FF"
+	},
+	"iterations": 7,
+	"angle": 20
+}
